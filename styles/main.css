@@ -1,0 +1,230 @@
+#popup {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #eee;
+}
+#popup a {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+header {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+header .top {
+  position: relative;
+}
+header .top h1 {
+  text-align: center;
+  padding: 50px 0;
+  margin: 50px 0 0;
+}
+header .top .right {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+header .top .right li:first-child {
+  position: relative;
+}
+header .top .right li:first-child > a::after {
+  background: #ff0;
+  content: "";
+  display: inline-block;
+  background: url(../images/arr.png) no-repeat;
+  width: 10px;
+  height: 10px;
+  margin-left: 7px;
+}
+header .top .right li:first-child .lang {
+  display: block;
+  background: #fff;
+  position: absolute;
+  z-index: 910;
+  border: 1px solid #aaa;
+  left: -50%;
+}
+header .top .right li:first-child .lang a {
+  font-size: 0.8rem;
+}
+header .top .right li {
+  margin: 0 15px;
+}
+header .top .right li a {
+  position: relative;
+  text-transform: uppercase;
+  padding: 10px 7px;
+  display: block;
+}
+header .top .right li a span {
+  font-size: 0.8rem;
+  border: 1px solid #ff7f50;
+  border-radius: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: -50%;
+  top: 90%;
+}
+header .top .all_nav {
+  display: block;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 55%;
+  width: 700px;
+  height: 500px;
+  z-index: 999;
+  line-height: 500px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .top .all_nav .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px;
+}
+header .btm nav > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+header .btm nav > ul > li {
+  position: relative;
+}
+header .btm nav > ul > li > a {
+  text-transform: uppercase;
+  padding: 15px;
+  display: block;
+}
+header .btm nav > ul > li > a:hover {
+  color: #ff7f50;
+}
+header .btm nav > ul > li .sub {
+  background: #fff;
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 900;
+  border: 1px solid #aaa;
+}
+header .btm nav > ul > li .sub li a {
+  padding: 10px;
+  display: block;
+}
+
+body {
+  position: relative;
+}
+
+main {
+  height: 200vh;
+}
+main #right_popup {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 1170px;
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid #aaa;
+}
+main #right_popup #popup_btn {
+  background: #fff;
+  width: 30px;
+  position: absolute;
+  top: 40%;
+  right: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+main #right_popup #popup_btn a:first-child {
+  background: #ff7f50;
+}
+main #right_popup #popup_btn a {
+  text-align: center;
+  width: 100%;
+  padding: 5px 5px;
+  border: 1px solid #aaa;
+  height: 30px;
+}
+main .contents {
+  padding: 20px 0;
+  width: 500px;
+  text-align: center;
+  width: 500px;
+}
+main .contents .info {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+main .contents .info_contents {
+  line-height: 1.5;
+  color: #aaa;
+}
+main .user {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+main .user a {
+  width: 200px;
+  border-bottom: 1px solid #aaa;
+  padding: 5px 0;
+  margin: 0 2px;
+}
+main .user a span {
+  color: #ff7f50;
+}
+main .board {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 30px 0 20px;
+}
+main .board a {
+  width: 200px;
+  border-bottom: 1px solid #aaa;
+  padding: 5px 0;
+  margin: 0 2px;
+}
+main h2 {
+  font-weight: 700;
+  text-align: left;
+  padding: 20px 0 20px 40px;
+}
+main h2 + p {
+  width: 200px;
+  padding-left: 40px;
+}
+main h2 + p img {
+  width: 100%;
+}
+main address {
+  font-size: 2rem;
+  padding-left: 40px;
+}
+main address + p {
+  padding: 20px 0 0 40px;
+  line-height: 1.4;
+}/*# sourceMappingURL=main.css.map */
