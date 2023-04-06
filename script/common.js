@@ -30,11 +30,14 @@ all_nav_close.addEventListener('click',function(){
     all_nav_open.style.display = 'none'
 })
 // ---kr----
-kr_lnb.addEventListener('mouseover',function(){
+lnb_boolean = true
+kr_lnb.addEventListener('click',function(){
+    if(lnb_boolean){
     kr_lnb_open.style.display = 'block'
-})
-kr_lnb.addEventListener('mouseout',function(){
+    }else{
     kr_lnb_open.style.display = 'none'
+    }
+    lnb_boolean = !lnb_boolean
 })
 // ---acc---
 nav_acc[12].addEventListener('mouseover',function(){
@@ -48,10 +51,17 @@ const right_popup = document.querySelector('#right_popup')
 const popup_btn = document.querySelector('#popup_btn a:first-child')
 console.log(right_popup,popup_btn)
 right_popup.style.transform = 'translateX(500px)'
+let popup_boolean = true
 popup_btn.addEventListener('click',function(){
     right_popup.style.transition = 'all 0.5s'
-    right_popup.style.transform = 'translateX(0)'
+    if(popup_boolean){
+        right_popup.style.transform = 'translateX(0)'
+        // console.log('보이기')
+    }else{
+        // console.log('숨기기')
+        right_popup.style.transform = 'translateX(500px)'
+    }
+    popup_boolean = !popup_boolean
 })
-popup_btn.addEventListener('mousedown',function(){
-    right_popup.style.transform = 'translateX(500px)'
-})
+// popup_btn.addEventListener('mousedown',function(){
+// })
